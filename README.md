@@ -47,7 +47,8 @@ original layout.
 
 **Instructions**
 
-Instructions provided here will be for Mac so no luck for Windows user, time to get on with the programme.. 😁
+Instructions provided here will be for Mac so no luck for Windows user, time to get on with the programme... 😁
+Actually for Windows user, your best bet is to use either AutoHotKey or SharpKeys.
 
 1. Install Karabiner-Elements. I am using 14.4.0 at time of writing this.
 2. Open the folder **~/.config/karabiner/assets/complex_modifications** then drop the following files in from the provided 'profile' folder
@@ -60,7 +61,7 @@ Instructions provided here will be for Mac so no luck for Windows user, time to 
 
    ![](profile/images/profiles.jpg)
 4. Select 'Default profile' as in screenshot above. Click 'Complex modifications' tab to bring up the panel showing a
-   list of rules you imported in JSON files above. Click the 'Enable' button for the rule 'Change Profile for MyProfile'.
+   list of rules you imported in JSON files above. Click the 'Enable' button for the rule 'Change Profile to MyProfile'.
    See
    ![](profile/images/complex-modifications-0.jpg)
 
@@ -74,9 +75,9 @@ Instructions provided here will be for Mac so no luck for Windows user, time to 
    have
    ![](profile/images/complex-modifications-2.jpg)
 
-If you make it this far, congratulation, you can now quickly do Cmd+Shift+F9 as if you are using a full size or 80% keyboard during
-debugging in IntelliJ after doing a quick (right Cmd + right Alt + rightShift) to confuse the hell out of your colleague
-who is watching. If colleague asks how, let him try then tell him he needs to be the chosen ONE to make it work. 😆
+If you make it this far, congratulation, you can now quickly do Cmd+Shift+F9 as if you are using a full size or 80% keyboard
+in IntelliJ after quickly switching layout to confuse the hell out of your colleague who is watching. If colleague asks
+how, let him try and fails then tell him he needs to be the chosen ONE to make it work. 😆
 
 <br/>
 
@@ -94,9 +95,9 @@ solved by adding more customization in Karabiner-Elements. In 'Simple modificati
 Many mechanical keyboards have dedicated knob or buttons to adjust and mute volume to justify its high price.
 These can be replicated easily in Karabiner-Elements by remapping
 
-* Print Screen key to Mute Sound
-* Num Lock key to Increase volume
-* Pause key to Decrease volume
+* _Print Screen_ key to Mute Sound
+* _Num Lock_ key to Increase volume
+* _Pause_ key to Decrease volume
 
 Do these by adding three elements in 'Simple modifications' tab. Will leave it as exercise to the user. ;)
 
