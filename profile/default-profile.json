@@ -1,0 +1,27 @@
+{
+    "title": "Change profile to 'Default profile'",
+    "rules": [
+    {
+        "description": "Press (right_command + right_option) then right_shift  to enable 'Default profile'",
+        "manipulators": [
+        {
+            "from":
+            {
+                "key_code": "right_shift",
+                "modifiers":
+                {
+                    "mandatory": [
+                        "right_option",
+                        "right_command"
+                    ],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+            {
+                "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Default profile'"
+            }],
+            "type": "basic"
+        }]
+    }]
+}  

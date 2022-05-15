@@ -1,0 +1,27 @@
+{
+    "title": "Change profile to MyProfile",
+    "rules": [
+    {
+        "description": "Press right_command + right_option + right_shift  to enable MyProfile",
+        "manipulators": [
+        {
+            "from":
+            {
+                "key_code": "right_shift",
+                "modifiers":
+                {
+                    "mandatory": [
+                        "right_option",
+                        "right_command"
+                    ]
+
+                }
+            },
+            "to": [
+            {
+                "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'MyProfile'"
+            }],
+            "type": "basic"
+        }]
+    }]
+}  

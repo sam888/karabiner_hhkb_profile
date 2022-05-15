@@ -1,0 +1,37 @@
+
+
+cd ~/.config/karabiner/assets/complex_modifications
+
+---------------------------------------------
+
+https://www.youtube.com/watch?v=iiSIaMD4vqY
+How to create your own CUSTOM complex modifications in Karabiner-elements
+
+cd ./config
+
+------
+
+https://github.com/pqrs-org/Karabiner-Elements/issues/1029
+
+To change back to "Default"(or whatever other profile), this code should be in "Default" profile "complex_modifications" rules, because when you changed to "Vimium" profile it will use its own rules, and there is no rule in it to get back ))
+{
+      "description": "Press left-option+o to enable Vimium",
+      "manipulators": [
+          {
+              "from": {
+                  "key_code": "o",
+                  "modifiers": {
+                      "mandatory": [
+                          "left_option"
+                      ]
+                  }
+              },
+              "to": [
+                  {
+                      "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Vimium'"
+                  }
+              ],
+              "type": "basic"
+          }
+      ]
+  },
