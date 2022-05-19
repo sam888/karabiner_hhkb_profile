@@ -135,9 +135,14 @@ Now regardless of how cool this 60% keyboard looks, it's actually a **nightmare*
 * Fn + Y = Page Up
 * Fn + H = Page Down
 
-These require the use of two hands to do it comfortably even though there are many 60% keyboards that allow you to use right hand to do the same these. So who in their right mind would buy this one? Unfortunately I wasn't in the right mind so I did buy this one and regretted after using it for coding. But fear not, I have created another profile **kbp-v60-mini.json** to get around the problem. Just put it in the usual 'complex_modifications' folder above and import it(i.e. the rule having description 'KBParadise V60 Mini profile') in 'Complex modifications' tab of profile 'Default profile'.
+These require the use of two hands to do it comfortably even though there are many 60% keyboards that allow you to use
+right hand to do these. So who in their right mind would buy this one? Unfortunately I wasn't in the right mind so I
+did buy this one and regretted after using it for coding. But fear not, I have created another profile
+**kbp-v60-mini.json** to get around the problem. Just put it in the usual 'complex_modifications' folder above and
+import it(i.e. the rule having description 'KBParadise V60 Mini profile') in 'Complex modifications' tab of profile
+'Default profile'.
 
-kbp-v60-mini.json basically does the following remapping to allow you to use right hand to do it all! 👌
+kbp-v60-mini.json basically does the following remapping to allow right hand to do it all! 👌
 
 * Fn + , = Home
 * Fn + . = End
@@ -159,4 +164,5 @@ These can be replicated easily in Karabiner-Elements by remapping
 
 Do these by adding three elements in 'Simple modifications' tab. Will leave it as exercise to the user. ;)
 
-Note if you want to create your own rules in JSON files to import into 'Complex modifications' tab, Karabiner-EventViewer lets you click the key you want and print out the key code of pressed key. Handy for remapping keys.
+Note if you want to create your own rules in JSON files to import into 'Complex modifications' tab,
+Karabiner-EventViewer lets you click the key you want and print out the key code of pressed key. Handy for remapping keys.
