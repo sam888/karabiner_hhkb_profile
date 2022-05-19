@@ -17,11 +17,41 @@
 
                 }
             },
+            "to_after_key_up": [
+            {
+                "shell_command": "afplay /System/Library/Sounds/Purr.aiff"
+
+            }],
             "to": [
             {
                 "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'MyProfile'"
             }],
             "type": "basic"
+        },
+        {
+            "from":
+            {
+                "key_code": "left_shift",
+                "modifiers":
+                {
+                    "mandatory": [
+                        "left_control",
+                        "left_command"
+                    ]
+
+                }
+            },
+            "to_after_key_up": [
+            {
+                "shell_command": "afplay /System/Library/Sounds/Purr.aiff"
+
+            }],
+            "to": [
+            {
+                "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'MyProfile'"
+                
+            }],
+            "type": "basic"
         }]
     }]
-}  
+}

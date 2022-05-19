@@ -90,6 +90,64 @@ solved by adding more customization in Karabiner-Elements. In 'Simple modificati
 
 <br/>
 
+**Bonuses**
+
+Anyone with big brain can see an immediate problem with the shortcut (i.e. right Command + right Alt + right Shift) keys
+above to change layout, that is, many 60% or 70% keyboards don't even have right Alt key! A perfect example would be the **KBParadise V60 Mini keyboard**.
+
+![](profile/images/kbp-v60-mini.jpeg)
+
+To get around that, we can simply add shortcut to the left-hand side so left Ctrl + left Command + left Shift will change
+profile. To top it off, we can also add in audio cue to let user know profile change is successful. The following script
+in default-profile.json will do the tricks.
+
+```json
+ {
+      "from":
+      {
+         "key_code": "left_shift",
+         "modifiers":
+         {
+            "mandatory": [
+               "left_control",
+               "left_command"
+            ]
+         }
+      },
+      "to_after_key_up": [
+      {
+          "shell_command": "afplay /System/Library/Sounds/Basso.aiff"
+
+      }],
+      "to": [
+      {
+          "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Default profile'"
+      }],
+      "type": "basic"
+  }
+```
+
+Similar script will be in my-profile.json except it will play a different sound and switch profile to 'MyProfile'.
+Now regardless of how cool this 60% keyboard looks, it's actually a **nightmare** to use for developer since
+
+* Fn + T = Home
+* Fn + G = End
+* Fn + Y = Page Up
+* Fn + H = Page Down
+
+These require the use of two hands to do it comfortably even though there are many 60% keyboards that allow you to use right hand to do the same these. So who in their right mind would buy this one? Unfortunately I wasn't in the right mind so I did buy this one and regretted after using it for coding. But fear not, I have created another profile **kbp-v60-mini.json** to get around the problem. Just put it in the usual 'complex_modifications' folder above and import it(i.e. the rule having description 'KBParadise V60 Mini profile') in 'Complex modifications' tab of profile 'Default profile'.
+
+kbp-v60-mini.json basically does the following remapping to allow you to use right hand to do it all! 👌
+
+* Fn + , = Home
+* Fn + . = End
+* Fn + O = Page Up
+* Fn + K = Page Down
+
+You are welcome...
+
+<br/>
+
 **Exercises**
 
 Many mechanical keyboards have dedicated knob or buttons to adjust and mute volume to justify its high price.
@@ -101,5 +159,4 @@ These can be replicated easily in Karabiner-Elements by remapping
 
 Do these by adding three elements in 'Simple modifications' tab. Will leave it as exercise to the user. ;)
 
-Note if you want to create your own rules in JSON files to import into 'Complex modifications' tab, Karabiner-EventViewer
-lets you click the key you want and print out the key code of pressed key. Handy for remapping keys.
+Note if you want to create your own rules in JSON files to import into 'Complex modifications' tab, Karabiner-EventViewer lets you click the key you want and print out the key code of pressed key. Handy for remapping keys.

@@ -17,6 +17,36 @@
                     "optional": ["any"]
                 }
             },
+            "to_after_key_up": [
+            {
+
+                "shell_command": "afplay /System/Library/Sounds/Basso.aiff"
+
+            }],
+            "to": [
+            {
+                "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Default profile'"
+            }],
+            "type": "basic"
+        },
+        {
+            "from":
+            {
+                "key_code": "left_shift",
+                "modifiers":
+                {
+                    "mandatory": [
+                        "left_control",
+                        "left_command"
+                    ]
+
+                }
+            },
+            "to_after_key_up": [
+            {
+                "shell_command": "afplay /System/Library/Sounds/Basso.aiff"
+
+            }],
             "to": [
             {
                 "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Default profile'"
@@ -24,4 +54,4 @@
             "type": "basic"
         }]
     }]
-}  
+}
