@@ -1,0 +1,40 @@
+{
+    "title": "Vortex Race 3 profile",
+    "rules": [
+    {
+        "description": "Vortex Race 3 profile",
+        "manipulators": [
+        {
+            "from":
+            {
+                "key_code": "end"
+            },
+            "to": [
+            {
+                "key_code": "page_down"
+            }],
+            "type": "basic"
+        },
+        {
+            "from":
+            {
+                "key_code": "page_up"
+            },
+            "to": [
+            {
+                "key_code": "end"
+            }],
+            "type": "basic"
+        },
+        {
+            "from":
+            {
+                "key_code": "page_down"
+            },
+            "to": [{
+                    "key_code": "page_up"
+            }],
+            "type": "basic"
+        }]
+    }]
+}
