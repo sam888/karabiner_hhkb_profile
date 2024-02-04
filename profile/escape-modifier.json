@@ -8,25 +8,6 @@
           "from": {
             "key_code": "escape",
             "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "escape"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "escape",
-            "modifiers": {
               "mandatory": [],
               "optional": [
                 "any"
@@ -42,6 +23,9 @@
             }
           ],
           "to_after_key_up": [
+            {
+              "key_code": "escape"
+            },
             {
               "set_variable": {
                 "name": "my_modifier_1",
