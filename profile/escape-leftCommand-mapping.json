@@ -17,7 +17,7 @@
           "to": [
             {
               "set_variable": {
-                "name": "my_modifier_1",8
+                "name": "my_modifier_1",
                 "value": 1
               }
             }
